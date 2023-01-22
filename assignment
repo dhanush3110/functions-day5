@@ -1,0 +1,235 @@
+//1.a)print odd numbers in array using anonymous function 
+
+// let result = function(){
+//     let numbers = [10,11,12,13,14,15,16,17,18];
+
+//     for(i=0;i<numbers.length;i++){
+//        let data = numbers[i];
+  
+//        if(data % 2 === 0){
+        
+//        }
+//        else{
+//         console.log(data);
+//        }
+//     }
+// }
+
+// result();
+
+//1.a)print odd numbers in array using IIFE function
+
+//  ( function result(){
+//     let numbers =[10,11,12,13,14,15,16,17,18];
+//     for(i=0;i<numbers.length;i++){
+//         let data =numbers[i];
+
+// if(data % 2 ===0){
+
+// }
+// else{
+//     console.log(data);
+// }
+
+//     }
+// })();
+// result();
+
+//1.b)Convert all the strings to title caps in a string array using anonymous function.
+
+//   let titleCase = function(str){
+//     var words = str.toLowerCase().split(" ");
+//     for(var i=0;i<words.length;i++){
+//         words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+//     }
+//     return words.join(" ");
+
+  
+// }
+
+// console.log(titleCase("my name dhanush"));
+
+
+//1.b)convert all the strings to title caps in a string array using IIfe function.
+
+
+//  (() =>{
+//    var str = "my name dhanush";
+//    var words = str.toLowerCase().split(" ")
+//         for(var i=0;i<words.length;i++){
+//             words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+//            }
+//            console.log(words.join(" "));
+           
+        
+//      })();
+      
+//1.c)Sum of all numbers in an array using anonymous function.
+
+// let total = function(arr){
+//    let sum = 0;
+//    for(let a of arr){
+     
+//       sum += a;
+//    };
+//       console.log(sum);
+// } 
+// total([10,11,12,13,14,15,16,17]);
+
+//1.c)Sum of all numbers in an array using IIFE function.
+
+// ( function(arr){
+//    arr =[10,11,12,13,14,15,16,17,18]
+//    let sum = 0;
+//    for(let a of arr){
+     
+//       sum += a;
+//    };
+//    console.log(sum);
+// } )();
+
+//1.d)Return all the prime numbers in an array using anonymous function.
+
+// let primenumbers = function (arr){
+//       let sortarray =[];
+//       arr.forEach((num)=>{
+//             let factor =0;
+//             for(let i=0;i<=num;i++){
+//                   if((num%i) === 0){
+//                         factor++
+
+//                   }
+//             }
+//             if(factor===2){
+//                   sortarray.push(num)
+//             }
+//       })
+//       console.log(sortarray);
+// }
+// primenumbers([2,17,4,5,6,7,8,9,10,11,12,13,14,15]);
+
+//1.d)Return all the prime numbers in an array using IIFE function.
+
+// ( function (arr){
+//       let sortarray =[];
+//       arr.forEach((num)=>{
+//             let factor =0;
+//             for(let i=0;i<=num;i++){
+//                   if((num%i) === 0){
+//                         factor++
+
+//                   }
+//             }
+//             if(factor===2){
+//                   sortarray.push(num)
+//             }
+//       })
+//       console.log(sortarray);
+// })([2,17,4,5,6,7,8,9,10,11,12,13,14,15])
+
+//1.e)Return all the palindromes in an array using anonymous function.
+
+// const array1 =[2002,1111,1234]
+// const ispalindrome = el => {
+// let str=String(el);
+// let i = 0;
+// let j =str.length-1;
+ 
+// while(i<j){
+//      if(str[i]===str[j]){
+//           i++;
+//           j--;
+//      }
+//      else{
+//           return false;
+//      }
+// }
+// return true;
+
+// };
+
+// const findpalindrome = array1=>{
+//      return array1.filter(el=> ispalindrome(el));
+// };
+// console.log(findpalindrome(array1));
+
+//1.e)Return all the palindromes in an array using IIFE function.
+
+//  const array1 =[2002,1111,1234]
+// function ispalindrome(el) {
+//      let str = String(el);
+//      let i = 0;
+//      let j = str.length - 1;
+
+//      while (i < j) {
+//           if (str[i] === str[j]) {
+//                i++;
+//                j--;
+//           }
+//           else {
+//                return false;
+//           }
+//      }
+//      return true;
+
+// }
+
+// function findpalindrome(array1) {
+//      return array1.filter(function (el) {
+//                return ispalindrome(el);
+//           });
+// }
+// console.log(findpalindrome(array1));
+
+//1.f)Return median of two sorted arrays of the same size using anonymous function.
+
+// let arr1=[10,20,8,80,18,100]
+// let arr2=[40,30,90,120,50,60]
+
+// let arr=arr1.concat(arr2);
+// let arrlength=arr.length;
+
+// //order the arrays in ascending
+// for(i=0;i<arrlength;i++){
+//     for(j=i+1;j<arrlength;j++){
+//         if(arr[i]>arr[j]){
+//             temp=arr[i];
+//             arr[i]=arr[j];
+//             arr[j]=temp;
+//         }
+//     }
+// }console.log("the given arrays in ascending order");
+
+// for(i=0;i<arrlength;i++){
+//    let arr3=arr[i]
+//    console.log(arr3);
+// };
+
+// //find the median value now
+// let median = arr[arr.length/2] + arr[arr.length/2+1];
+// median = median/2;
+// console.log(median);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
